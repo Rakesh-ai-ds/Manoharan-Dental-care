@@ -45,36 +45,11 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("services")}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Services
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("testimonials")}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Testimonials
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Contact
-            </button>
+            <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+            <a href="/services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+            <a href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+            <a href="/testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">Testimonials</a>
+            <a href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
           </nav>
 
           {/* Contact Info & CTA */}
@@ -83,9 +58,7 @@ export function Header() {
               <Phone className="w-4 h-4" />
               <span className="text-xs">Emergency: 24/7</span>
             </div>
-            <Button onClick={() => scrollToSection("contact")} className="bg-blue-600 hover:bg-blue-700">
-              Book Appointment
-            </Button>
+            <a href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium">Book Appointment</a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,40 +71,13 @@ export function Header() {
         {isMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="text-left text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection("services")}
-                className="text-left text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Services
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-left text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                About
-              </button>
-              <button
-                onClick={() => scrollToSection("testimonials")}
-                className="text-left text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Testimonials
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-left text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Contact
-              </button>
+              <a href="/" className="text-left text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+              <a href="/services" className="text-left text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+              <a href="/about" className="text-left text-gray-700 hover:text-blue-600 transition-colors">About</a>
+              <a href="/testimonials" className="text-left text-gray-700 hover:text-blue-600 transition-colors">Testimonials</a>
+              <a href="/contact" className="text-left text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
               <div className="pt-4 border-t border-gray-200">
-                <Button onClick={() => scrollToSection("contact")} className="w-full bg-blue-600 hover:bg-blue-700">
-                  Book Appointment
-                </Button>
+                <a href="/contact" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium block text-center">Book Appointment</a>
               </div>
             </nav>
           </div>
